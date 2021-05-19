@@ -18,5 +18,10 @@ router.get('/servicos', servicosController.index);
 
 router.get('/servicos/:servico', servicosController.show);
 
+// rota para /pets/login que retorna o método index da petsController
+router.get('/login', servicosController.index);
+
+router.get('/login/:usuario', servicosController.show);
+
 
 module.exports = router;
